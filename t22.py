@@ -1,0 +1,13 @@
+exec(open('t13.py').read().split('shots = {}')[0])
+run(60, 0x01)
+nes.ram[0xED] = 1; nes.ram[0xDE] = 1   # dead_t, lives (contexto)
+run(3)
+print('p_on', nes.ram[0x51F], 'cont', nes.ram[S['continues']], 'cont_t', R('cont_t'))
+run(100)
+a = nes.render()
+print('cont_t', R('cont_t'))
+run(1, 0x10); run(30)
+print('p_on', nes.ram[0x51F], 'cont', nes.ram[S['continues']], 'lives', nes.ram[0x50E], 'x', nes.ram[0x500]+256*nes.ram[0x501], 'cam', R('cam_lo'))
+b = nes.render()
+from PIL import Image
+im = Image.new('RGB', (512, 240)); im.paste(a, (0, 0)); im.paste(b, (256, 0)); im.resize((1024, 480)).save('t22.png')

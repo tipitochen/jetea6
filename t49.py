@@ -1,0 +1,11 @@
+exec(open('t13.py').read().split('shots = {}')[0])
+run(30)
+print('inicio weap', nes.ram[0xEB], 'pbase', nes.ram[0x500+27], 'ammo', nes.ram[0xEC])
+run(1, 0x20); run(20)
+print('state', R('state'), 'cur', nes.ram[S['pz_cur']])
+run(1, 0x08); run(10)   # arriba
+print('cur', nes.ram[S['pz_cur']])
+run(1, 0x80); run(5)
+print('state', R('state'), 'weap ctx', nes.ram[0xEB], 'pbase', nes.ram[0x500+27])
+for i in range(40): run(1)
+print('state', R('state'), 'weap ctx', nes.ram[0xEB], 'pbase', nes.ram[0x500+27])
