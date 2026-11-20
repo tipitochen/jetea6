@@ -6,6 +6,11 @@
 
 **Un beat 'em up original para NES**, hecho desde cero en ensamblador 6502: robo, persecución y tiros por las calles, el cielo y el mar de **Nice City**.
 
+<p align="center">
+  <a href="https://github.com/tipitochen/jetea6/releases/latest"><img src="https://img.shields.io/badge/Descargar-v1.0-2ea44f?style=for-the-badge&logo=github" alt="Descargar v1.0"></a>
+  <a href="https://www.youtube.com/@tipitochen"><img src="https://img.shields.io/badge/YouTube-@tipitochen-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube @tipitochen"></a>
+</p>
+
 🎮 **ROM lista para jugar:** [`JETEA6.nes`](JETEA6.nes) (mapper MMC3, 128 KB de PRG + 256 KB de CHR)
 
 <p align="center">
@@ -118,6 +123,18 @@ Mapa de PRG (bancos de 8 KB): 0 sprites · 1 música y niveles · 2 título · 3
 ![Capturas](docs/capturas.png)
 
 </details>
+
+---
+
+## 🎬 Mi canal de YouTube
+
+Más proyectos de NES, cartuchos y cosas retro en mi canal:
+
+<p align="center">
+  <a href="https://www.youtube.com/@tipitochen"><img src="https://img.shields.io/badge/Suscribite-@tipitochen-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Canal de YouTube @tipitochen"></a>
+</p>
+
+<p align="center"><a href="https://www.youtube.com/@tipitochen">youtube.com/@tipitochen</a></p>
 
 ---
 
