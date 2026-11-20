@@ -1,12 +1,34 @@
+<p align="center">
+  <img src="docs/titulo.png" width="512" alt="Pantalla de título de JETEA 6">
+</p>
+
 # JETEA 6
 
 **Un beat 'em up original para NES**, hecho desde cero en ensamblador 6502: robo, persecución y tiros por las calles, el cielo y el mar de **Nice City**.
 
-![Capturas](capturas.png)
+🎮 **ROM lista para jugar:** [`JETEA6.nes`](JETEA6.nes) (mapper MMC3, 128 KB de PRG + 256 KB de CHR)
 
-> 🎮 **ROM lista para jugar:** [`JETEA6.nes`](JETEA6.nes) (mapper MMC3, 128 KB de PRG + 256 KB de CHR)
+<p align="center">
+  <img src="docs/nikita.png" width="512" alt="Logo de NIKITA al encender">
+  <br><em>Al encender, el logo de NIKITA</em>
+</p>
 
----
+## Fotos
+
+| | |
+|:---:|:---:|
+| <img src="docs/calle.png" width="400"><br>Nivel 1: Playa Nice, a dos jugadores | <img src="docs/helicoptero.png" width="400"><br>Nivel 2: Cielos de Nice, en helicóptero |
+| <img src="docs/muelle.png" width="400"><br>Nivel 6: la salida desde el muelle | <img src="docs/moto_agua.png" width="400"><br>Nivel 6: tiburones en la bahía |
+| <img src="docs/yate.png" width="400"><br>Jefe del nivel 6: el yate del capo | <img src="docs/final.png" width="400"><br>El final... rumbo a Paysandú |
+
+## Estructura del repositorio
+
+```
+JETEA6.nes   la ROM, lista para jugar
+README.md    esto
+docs/        fotos de la pantalla de título, el logo y el juego
+src/         todo el código fuente y los gráficos de referencia
+```
 
 ## La historia
 
@@ -61,13 +83,14 @@ En el helicóptero y en la moto de agua, con 2 jugadores el jugador 1 maneja y e
 Hace falta Python 3 con `Pillow` y `numpy`. No hacen falta herramientas externas: el ensamblador está incluido.
 
 ```bash
-python3 build4.py          # genera los gráficos y arma JETEA6.nes
+cd src
+python3 build4.py          # genera los gráficos y arma src/JETEA6.nes
 python3 build4.py --nogen  # solo ensambla (más rápido, si no cambiaste gráficos)
 ```
 
 Si un salto relativo queda fuera de rango: `python3 fixbr.py game4.asm`.
 
-## Cómo está organizado
+## Cómo está organizado `src/`
 
 | Archivo | Qué hace |
 |---------|----------|
@@ -85,8 +108,16 @@ Si un salto relativo queda fuera de rango: `python3 fixbr.py game4.asm`.
 | `music4.asm` | Música |
 | `t*.py` | Pruebas automáticas que corren en el emulador |
 | `ref/`, `story/`, `title/` | Imágenes de referencia para generar los gráficos |
+| `game.asm`, `game2.asm`, `game3.asm`, `*3.asm` | Versiones anteriores del juego (historial) |
 
 Mapa de PRG (bancos de 8 KB): 0 sprites · 1 música y niveles · 2 título · 3-6 historia · 7 logo, pausa y arsenal · 8 helicóptero · 9-10 motos de agua · banco fijo en `$C000-$FFFF`.
+
+<details>
+<summary>Todas las capturas juntas</summary>
+
+![Capturas](docs/capturas.png)
+
+</details>
 
 ---
 
