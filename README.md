@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/titulo.png" width="512" alt="Pantalla de título de JETEA 6">
+  <img src="docs/portada.jpg" width="100%" alt="Portada de JETEA 6: José y Luciana en motos de agua">
 </p>
 
 # JETEA 6
@@ -13,10 +13,9 @@
 
 🎮 **ROM lista para jugar:** [`JETEA6.nes`](JETEA6.nes) (mapper MMC3, 128 KB de PRG + 256 KB de CHR)
 
-<p align="center">
-  <img src="docs/nikita.png" width="512" alt="Logo de NIKITA al encender">
-  <br><em>Al encender, el logo de NIKITA</em>
-</p>
+| | |
+|:---:|:---:|
+| <img src="docs/nikita.png" width="400" alt="Logo de NIKITA"><br><em>Al encender, el logo de NIKITA</em> | <img src="docs/titulo.png" width="400" alt="Pantalla de título"><br><em>La pantalla de título</em> |
 
 ## Fotos
 
@@ -26,12 +25,25 @@
 | <img src="docs/muelle.png" width="400"><br>Nivel 6: la salida desde el muelle | <img src="docs/moto_agua.png" width="400"><br>Nivel 6: tiburones en la bahía |
 | <img src="docs/yate.png" width="400"><br>Jefe del nivel 6: el yate del capo | <img src="docs/final.png" width="400"><br>El final... rumbo a Paysandú |
 
+## 📦 El cartucho
+
+| Adelante | Atrás |
+|:---:|:---:|
+| <img src="docs/portada.jpg" width="420" alt="Portada"> | <img src="docs/etiqueta_trasera.png" width="420" alt="Etiqueta trasera"> |
+
+Los archivos para imprimir están en [`extras/tarjeta/`](extras/tarjeta/). La etiqueta trasera tiene el tamaño de una tarjeta de crédito.
+
+## 🕹️ Extras
+
+En [`extras/`](extras/) están las **versiones anteriores** del juego (GTA6 v1, v1.5 y v2), el **hack de Contra GTA6** donde empezó la idea y las **tarjetas del cartucho**.
+
 ## Estructura del repositorio
 
 ```
 JETEA6.nes   la ROM, lista para jugar
 README.md    esto
-docs/        fotos de la pantalla de título, el logo y el juego
+docs/        fotos, portada y etiqueta para el README
+extras/      versiones anteriores, hack de Contra y tarjetas para imprimir
 src/         todo el código fuente y los gráficos de referencia
 ```
 
